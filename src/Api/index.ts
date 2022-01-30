@@ -9,6 +9,7 @@ const Axios = axios.create({
     },
 });
 
+
 Axios.defaults.params = {}
 Axios.defaults.params['apiKey'] = process.env.REACT_APP_POLYGON_API_KEY
 
