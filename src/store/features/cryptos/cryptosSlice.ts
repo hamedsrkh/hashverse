@@ -17,7 +17,7 @@ export const getCryptos = createAsyncThunk(
     "cryptos/getCryptos",
     async (date: string | undefined  = undefined, getState) => {
         const { data } = await getGroupedDaily(date)
-        return data.results
+        return data.results ? data.results : []
     }
 )
 
